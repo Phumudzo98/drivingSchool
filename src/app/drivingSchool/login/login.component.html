@@ -3,23 +3,33 @@
     <div class="row">
         <div class="col-sm-12">
 
-            <p class="mt-5 mb-5" style="font-size: 36px; color: #455A64;text-align: center; font-weight: 700;">Login</p>
+            <p class="mt-5 mb-1" style="margin-left: 5%; font-size: 36px; color: #455A64;text-align: left; font-weight: 700;">Login</p>
+
+            <img src="/img/driving-school-pana-1.png" class="img-fluid mb-5 mt-4" style="margin-left: 18%;">
+
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
 
-        <div class="form-group border-around p-2" style="display: flex; flex-direction: column;">
-            <label style="color: #828283; font-size: 14px; font-weight: 500;">Username</label>
-            <input type="text" formControlName="username" placeholder="Enter your first name">
+        <div class="form-group border-around p-2 mb-3" style="display: flex; flex-direction: column;">
+            <div style="display: inline-flex;">
+            <img src="img/person.svg" class="img-size"> <input type="text" formControlName="username" placeholder="Username">
+            </div>
         </div>
 
 
         <div class="form-group border-around p-2" style="display: flex; flex-direction: column;" >
-            <label for="password">Password</label>
-            <input type="password" formControlName="password" placeholder="Enter password">
+           
+            <div style="display: inline-flex;">
+            <img src="img/lock.svg" class="img-size"><input type="password" formControlName="password" placeholder="Password">
+            </div>
+            
         </div>
+        <p style="color: #828283; padding-top: 2%;">Forgot password?</p>
 
-        <div style="text-align: center;">
+        <div style="text-align: center;" class="mt-5">
             <button style="background-color: #1A457C; color: #FFFFFF; border-radius: 35px; font-size: 20px; width: 60%; height: 60px;" type="submit">Login</button>
         </div>
+        <p style="text-align: center;color: #828283; padding-top: 2%;">New here? <a style="text-decoration: none;"href="">Sign up</a></p>
+        
 
     </form>
 </div>

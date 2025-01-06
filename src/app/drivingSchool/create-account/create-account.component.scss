@@ -8,6 +8,7 @@
 input
 {
     border: none;
+    width: 50%;
 }
 
 input:focus
@@ -23,4 +24,9 @@ input:focus
 select
 {
     border: none;
+}
+
+.img-geo-size
+{
+    width: 25px !important;
 }

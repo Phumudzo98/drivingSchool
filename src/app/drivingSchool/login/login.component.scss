@@ -1,5 +1,37 @@
 
 .background-image
 {
-    background-image: url('/img/background (2).png');
+    background-image: url('/img/background.png');
 }
+
+.border-around
+{
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: #F8F5F5;
+    border-color:#F8F5F5 ;
+}
+
+input{
+    background-color: #F8F5F5;
+     border: none;
+    
+}
+
+::placeholder
+{
+    color: #33363F;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Be Vietnam Pro';
+    padding-left: 20px;
+}
+
+.img-size
+{
+    width: 30px !important;
+    height:auto;
+    
+    
+}
+
