@@ -1,0 +1,26 @@
+.border-around
+{
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: white;
+}
+
+input
+{
+    border: none;
+}
+
+input:focus
+{
+    border: none;
+}
+
+.background-image
+{
+    background-image: url('/img/background.png');
+}
+
+select
+{
+    border: none;
+}

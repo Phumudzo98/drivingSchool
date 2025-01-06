@@ -1,0 +1,27 @@
+
+<diV class="container background-image">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <p class="mt-5 mb-5" style="font-size: 36px; color: #455A64;text-align: center; font-weight: 700;">Login</p>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+        <div class="form-group border-around p-2" style="display: flex; flex-direction: column;">
+            <label style="color: #828283; font-size: 14px; font-weight: 500;">Username</label>
+            <input type="text" formControlName="username" placeholder="Enter your first name">
+        </div>
+
+
+        <div class="form-group border-around p-2" style="display: flex; flex-direction: column;" >
+            <label for="password">Password</label>
+            <input type="password" formControlName="password" placeholder="Enter password">
+        </div>
+
+        <div style="text-align: center;">
+            <button style="background-color: #1A457C; color: #FFFFFF; border-radius: 35px; font-size: 20px; width: 60%; height: 60px;" type="submit">Login</button>
+        </div>
+
+    </form>
+</div>
+</div>
+</diV>
