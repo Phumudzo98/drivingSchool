@@ -1,0 +1,35 @@
+<div class="container-fluid background-image">
+    <div class="row">
+
+        <div class="col-sm-12 position-rel">
+            <div class="card" style="margin-top: 30%;background-color: white; border-top-left-radius: 20px; border-top-right-radius: 20px; width: 100% !important;">
+                <img src="/img/x-lg.svg" style="width: 30px; height: auto;margin-left: 2%; margin-top: 2%;">
+
+                <p class="mt-5 " style="font-size: 36px; color: #455A64; font-weight: 700;margin-left: 2%;">Verificaton of code</p>
+                <p style="color: #777777; font-size: 14px; font-weight: 400;margin-left: 2%;">We have sent the verification code to your email address; <a style="text-decoration: none;" href="mailto:baloyithabo19@gmail.com">baloyithabo19&#64;gmail.com</a></p>
+
+                <div style="display: inline-flex; width: 20%; align-items: center;">
+                    <input type="text" maxlength="1" #otp1 (input)="moveToNext($event, otp2)">
+                    <input type="text" maxlength="1" #otp2 (input)="moveToNext($event, otp3)">
+                    <input type="text" maxlength="1" #otp3 (input)="moveToNext($event, otp4)">
+                    <input type="text" maxlength="1" #otp4>
+                </div>
+
+                <div style="text-align: center; margin-top: 5%;">
+                <p style="color: #959492; font-size: 12px;">Didn't recieve OTP?</p>
+                <p><a href="">Resend Code</a></p>
+                </div>
+
+
+
+                <div style="text-align: center; margin-top: 80%;">
+                <button style="background-color: #1A457C; color: #FFFFFF; border-radius: 35px; font-size: 20px; width: 60%; height: 60px;" type="submit">Confirm</button>
+                </div>
+
+            </div>
+
+            
+        </div>
+    </div>
+
+</div>

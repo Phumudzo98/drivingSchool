@@ -8,13 +8,19 @@ import { CreateAccountComponent } from './drivingSchool/create-account/create-ac
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { WelcomePageComponent } from './drivingSchool/welcome-page/welcome-page.component';
+import { CreatePasswordComponent } from './drivingSchool/create-password/create-password.component';
+import { VerificationComponent } from './verification/verification.component';
+import { OtpSuccessComponent } from './otp-success/otp-success.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     CreateAccountComponent,
-    WelcomePageComponent
+    WelcomePageComponent,
+    CreatePasswordComponent,
+    VerificationComponent,
+    OtpSuccessComponent
   ],
   imports: [
     BrowserModule,
