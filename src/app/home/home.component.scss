@@ -1,0 +1,40 @@
+.background-image {
+    background-image: url('/img/background.png');
+    position: relative; 
+    height: 110vh; 
+}
+
+.first-box {
+    
+   
+     
+    width: 80%;
+    height: 15%;
+    background-color: #1A457C;
+    border-radius: 25px;
+     margin:auto;
+    padding: 3%
+}
+
+.second-box
+{
+    
+   
+    align-items: center; 
+    width: 80%;
+    height: 15%;
+    background-color: #6DDA00;
+    border-radius: 25px;
+    margin:auto;
+    padding: 3%
+}
+
+
+
+.row
+{
+    z-index:1;
+}
+
+
+

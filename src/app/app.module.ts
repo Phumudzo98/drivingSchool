@@ -11,6 +11,12 @@ import { WelcomePageComponent } from './drivingSchool/welcome-page/welcome-page.
 import { CreatePasswordComponent } from './drivingSchool/create-password/create-password.component';
 import { VerificationComponent } from './verification/verification.component';
 import { OtpSuccessComponent } from './otp-success/otp-success.component';
+import { HomeComponent } from './home/home.component';
+import { TestingComponent } from './testing/testing.component';
+import { FooterComponent } from './drivingSchool/component/footer/footer.component';
+import { ProfileComponent } from './profile/profile.component';
+import { UpdateSuccessComponent } from './update-success/update-success.component';
+import { CreateCompanyComponent } from './drivingSchool/create-company/create-company.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,13 @@ import { OtpSuccessComponent } from './otp-success/otp-success.component';
     WelcomePageComponent,
     CreatePasswordComponent,
     VerificationComponent,
-    OtpSuccessComponent
+    OtpSuccessComponent,
+    HomeComponent,
+    TestingComponent,
+    FooterComponent,
+    ProfileComponent,
+    UpdateSuccessComponent,
+    CreateCompanyComponent
   ],
   imports: [
     BrowserModule,

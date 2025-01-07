@@ -1,7 +1,7 @@
 .border-around
 {
     border: 1px solid;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: white;
     border-color: #FFFFFF;
     box-shadow: 0px 3px 14px #00000026;
@@ -12,6 +12,20 @@ input
 {
     border: none;
     width: 100%;
+}
+
+textarea::placeholder{
+    font-style: italic;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+.special-input
+{
+    border: 1px solid #455A6436;
+    border-radius: 20px;
+    height: 120px;
+    margin-top: 3%;
 }
 
 input:focus

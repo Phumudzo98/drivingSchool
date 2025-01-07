@@ -17,7 +17,11 @@
 
         <div class="form-group border-around mt-3 p-2" style="display: flex; flex-direction: column;">
         <label style="color: #828283; font-size: 14px;">Citizenship</label>
-        <input type="text" formControlName="citizenship" placeholder="Enter your citizenship">
+        <select formControlName="citizenship" placeholder="Select citizenship">
+            <option style="color: #828283; font-size: 14px; font-weight: 500;" value="" selected>Select citizenship</option>
+            <option value="South African">South African</option>
+            <option value="Botswana">Botswana</option>
+        </select>
         </div>
 
         <div class="form-group border-around mt-3 p-2" style="display: flex; flex-direction: column;">
@@ -59,9 +63,38 @@
         <input type="text" formControlName="postalCode" placeholder="Enter your postal code">
         </div>
 
+        <div *ngIf="createAccountForm.get('citizenship')?.value == 'South African'" class="form-group border-around mt-3">
+            <div style="display: inline-flex; width: 97%;">
+                <label for="upload" class="upload-button">Attach a copy of your ID</label>
+                <input style="width: 100%;" type="file" id="upload"><img style="width: 25px; height: auto;" src="/img/link-45deg.svg">
+            </div>
+        </div>
+        
+        <div *ngIf="createAccountForm.get('citizenship')?.value !== 'South African'" class="form-group border-around mt-3">
+            <div style="display: inline-flex; width: 97%;">
+                <label for="upload" class="upload-button">Attach a copy of your Passport</label>
+                <input style="width: 100%;" type="file" id="upload"><img style="width: 25px; height: auto;" src="/img/link-45deg.svg">
+            </div>
+        </div>
+
+        <div *ngIf="createAccountForm.get('citizenship')?.value !== 'South African'" class="form-group border-around mt-3">
+            <div style="display: inline-flex; width: 97%;">
+                <label for="upload" class="upload-button">Attach your permission document</label>
+                <input style="width: 100%;" type="file" id="upload"><img style="width: 25px; height: auto;" src="/img/link-45deg.svg">
+            </div>
+        </div>
+
+        <div *ngIf="createAccountForm.get('citizenship')?.value !== 'South African'" class="form-group border-around mt-3">
+            <div style="display: inline-flex; width: 97%;">
+                <label for="upload" class="upload-button">Do you have a learners licence?</label>
+                <input style="width: 100%;" type="file" id="upload"><img style="width: 25px; height: auto;" src="/img/link-45deg.svg">
+            </div>
+        </div>
+
         <div class="form-group mt-3 border-around p-2">
             <label style="text-align: left;color: #828283; font-size: 14px; font-weight: 500;">Agent Referral</label>
             <select formControlName="agentReferral" placeholder="Select agent referral">
+                <option value="" selected>Select Agent</option>
                 <option value="Phumudzo">Phumudzo</option>
                 <option value="Tshivhase">Tshivhase</option>
             </select>
@@ -69,7 +102,7 @@
     
 
 
-        <div style="display: inline-flex;">
+        <div style="display: inline-flex; gap: 20px;justify-content: center;margin-left: 10%;">
         <div class="form-group border-around mt-3 p-2">
         <label style="color: #828283; font-size: 14px; font-weight: 500; display: flex; flex-direction: column;">Gender</label>
         <select formControlName="gender" placeholder="Select gender">
